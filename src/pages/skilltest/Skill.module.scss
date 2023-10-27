@@ -1,0 +1,280 @@
+.skillsContainer{
+    width: 100%;
+    padding: 30px 40px;
+    .heading{
+        font-size: 14px;
+        color: grey;
+    }
+    .skillsDiv{
+        padding: 30px 0px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 4fr 2fr; 
+        .skillSection{
+            display: grid;
+            gap:40px;     
+        }
+    }
+}
+
+
+//Test Details
+.questionDetails{
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    .info{
+        display: flex;
+        gap: 20px;
+        .stackName{
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 8px;
+        }
+        .testName{
+            color: grey;
+        }
+    }
+    .updatebutton{
+        border-radius: 10px;
+        color: white;
+        padding: 10px 30px;
+        background-color: #142683;
+        cursor: pointer;
+    }
+}
+
+.quickStatistics{
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 40px 30px;
+    .statsheader{
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+    .statsDetails{
+        display: flex;
+        justify-content: space-between;
+        .statsInfo{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .statsnum{
+                font-size: 24px;
+                font-weight: 800;
+                padding-bottom: 2px;
+            }
+            .statsrank{
+                font-size: 16px;
+                color: #9EAAB7;
+            }
+        }
+        hr:last-child{
+            display: none;
+        }
+    }
+
+}
+
+.graphDiv{
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    .descDiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .desc{
+            display: grid;
+            gap: 20px;
+            width: 60%;
+            .comparison{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    .comparisonGraph{
+        margin: 20px;
+        border: 1px solid #e5e5e5;
+        // width: 300px;
+    }
+}
+
+.syllabus{
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    .stackHeader{
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 8px;
+    }
+    .stackName{
+        font-size: 18px;
+        color: grey;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .perDiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .progressBar {  
+            width: 80%; 
+            height: 15px;
+            border-radius: 15px; 
+            .percentage { 
+                display: block;
+                // animation: progress 3s linear;
+                color: white; 
+                padding: 1%; 
+                text-align: right; 
+                font-size: 20px; 
+                border-radius: 15px; 
+                height: 15px;
+            } 
+            .htmltoolbg{
+                background-color: #438AF6; 
+                width: 80%;
+                animation: progress-htmltoolbg 3s linear; 
+                @keyframes progress-htmltoolbg {
+                    from {
+                        width: 0;
+                      }
+                      to {
+                        width: 80%;
+                      }
+                  }
+                
+
+            }
+            .htmltagbg{
+                background-color: #FF9142; 
+                width: 60%;
+                animation: progress-htmltagbg 3s linear; 
+                @keyframes progress-htmltagbg {
+                    from {
+                        width: 0;
+                      }
+                      to {
+                        width: 60%;
+                      }
+                  }
+                .fontcolor  {
+                    color: #FF9142;
+                }
+            }
+            .htmltable1bg{
+                background-color: #FB5E5E; 
+                width: 24%;
+                animation: progress-htmltable1bg 3s linear; 
+                @keyframes progress-htmltable1bg {
+                    from {
+                        width: 0;
+                      }
+                      to {
+                        width: 24%;
+                      }
+                  }
+            }
+            .htmltable2bg{
+                background-color: #2EC971; 
+                width: 96%;
+                animation: progress-htmltable2bg 3s linear; 
+                @keyframes progress-htmltable2bg {
+                    from {
+                        width: 0;
+                      }
+                      to {
+                        width: 96%;
+                      }
+                  }
+            }
+        
+        }
+        .htmltool{
+            background-color: #7ea4dc;
+        }
+        .htmltag{
+            background-color: #eca97a;
+        } 
+        .htmltable1{
+            background-color: #f8a9a9;
+        } 
+        .htmltable2{
+            background-color: #a9e7c4;
+        }  
+        .perNum{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .fonthtmltool{
+            color: #438AF6;
+        }
+        .fonthtmltag{
+            color: #FF9142;
+        } 
+        .fonthtmltable1{
+            color: #FB5E5E;
+        } 
+        .fonthtmltable2{
+            color: #2EC971;
+        }  
+    }
+    
+}
+
+
+.questionAnalysisDiv{
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 30px 20px;
+    // height: 1000px;
+    .questionAnalysisHeader{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        font-size: 20px;
+            font-weight: 700;
+        .questionAnalysisMarks{
+            color: #438AF6;
+        }   
+    }
+    .questionAnalysisDesc{
+        font-size: 16px;
+        color: #566474;
+        .bold{
+            font-weight: 600;
+        }
+    }
+    .outercircle{
+        position: relative;
+        // margin: 30px;
+        
+        // padding: 40px;
+        border: 30px solid #438AF6;
+        border-radius: 50%;
+        height: 180px;
+        width: 180px;
+        .innercircle{
+            display: grid;
+        align-items: center;
+        justify-content: center;
+            position: absolute;
+            bottom: -29px;
+            left: -30px;
+            border-top-left-radius: 2px solid pink;
+            border-width: 30px;
+            // padding: 40px;
+            border-radius: 50%;
+            height: 180px;
+            width: 180px;
+        }   
+
+    }
+}
